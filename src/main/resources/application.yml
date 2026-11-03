@@ -28,12 +28,13 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
+  web:
+    error:
+      include-message: always
+      include-binding-errors: always
 
 server:
   port: 8080
-  error:
-    include-message: always
-    include-binding-errors: always
 
 management:
   endpoints:
